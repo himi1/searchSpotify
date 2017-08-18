@@ -3,10 +3,10 @@
 searchSpotify – A small app for searching spotify songs in iOS using swift.
 
 ## Features added
-Spotify login
-Search for songs from Spotify
-Option to load more songs from Spotify after user reaches end of the search result page
-Support for iPhone and iPad, for both portrait mode as well as landscape mode
+- Spotify login
+- Search for songs from Spotify
+- Option to load more songs from Spotify after user reaches end of the search result page
+- Support for iPhone and iPad, for both portrait mode as well as landscape mode
 
 ## App demo
 
