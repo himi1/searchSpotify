@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jlb-eK-niQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HKGrotesk-Bold.otf">
+            <string>HKGrotesk-Bold</string>
+        </array>
+        <array key="HKGrotesk-Light.otf">
+            <string>HKGrotesk-Light</string>
+        </array>
+        <array key="HKGrotesk-Medium.otf">
+            <string>HKGrotesk-Medium</string>
+        </array>
+        <array key="HKGrotesk-Regular.otf">
+            <string>HKGrotesk-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--LoginViewController-->
+        <scene sceneID="Jdu-ax-OSi">
+            <objects>
+                <viewController title="LoginViewController" id="Jlb-eK-niQ" customClass="SignInViewController" customModule="SearchSpotify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JdO-4k-lJM"/>
+                        <viewControllerLayoutGuide type="bottom" id="odX-GJ-vXU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RBD-wN-WRN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="SBg-2s-468">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SearchSpotify" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNm-8b-Eh0">
+                                <rect key="frame" x="78" y="272.5" width="220" height="41"/>
+                                <fontDescription key="fontDescription" name="HKGrotesk-Bold" family="HK Grotesk" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search for your favorite music on spotify" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jV0-3u-tnh">
+                                <rect key="frame" x="34" y="323.5" width="307.5" height="20"/>
+                                <fontDescription key="fontDescription" name="HKGrotesk-Light" family="HK Grotesk" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r8A-Bx-VTM" customClass="SPTConnectButton">
+                                <rect key="frame" x="55" y="373.5" width="266" height="46"/>
+                                <color key="backgroundColor" red="0.62807674229999999" green="1" blue="0.59483990919999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.62807674229999999" green="1" blue="0.59483990919999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="CKt-2i-yqQ"/>
+                                    <constraint firstAttribute="width" constant="266" id="oTz-Vu-btT"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="signInButtonTapped:" destination="Jlb-eK-niQ" eventType="touchUpInside" id="1Ms-s1-5tG"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SBg-2s-468" firstAttribute="top" secondItem="RBD-wN-WRN" secondAttribute="top" id="A69-PB-4sQ"/>
+                            <constraint firstItem="jV0-3u-tnh" firstAttribute="centerY" secondItem="RBD-wN-WRN" secondAttribute="centerY" id="AoU-uB-b9W"/>
+                            <constraint firstAttribute="trailing" secondItem="SBg-2s-468" secondAttribute="trailing" id="Xd0-ae-33m"/>
+                            <constraint firstItem="r8A-Bx-VTM" firstAttribute="centerX" secondItem="RBD-wN-WRN" secondAttribute="centerX" id="c2f-H3-ALs"/>
+                            <constraint firstItem="jV0-3u-tnh" firstAttribute="centerX" secondItem="RBD-wN-WRN" secondAttribute="centerX" id="dpP-1V-Hsh"/>
+                            <constraint firstItem="SBg-2s-468" firstAttribute="leading" secondItem="RBD-wN-WRN" secondAttribute="leading" id="gDQ-OC-Uy5"/>
+                            <constraint firstItem="odX-GJ-vXU" firstAttribute="top" secondItem="SBg-2s-468" secondAttribute="bottom" id="qqF-I3-6Nm"/>
+                            <constraint firstItem="r8A-Bx-VTM" firstAttribute="top" secondItem="jV0-3u-tnh" secondAttribute="bottom" constant="30" id="uTm-2q-hUd"/>
+                            <constraint firstItem="cNm-8b-Eh0" firstAttribute="centerX" secondItem="RBD-wN-WRN" secondAttribute="centerX" id="uuf-88-MrP"/>
+                            <constraint firstItem="jV0-3u-tnh" firstAttribute="top" secondItem="cNm-8b-Eh0" secondAttribute="bottom" constant="10" id="xMl-RV-7aT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="signInButton" destination="r8A-Bx-VTM" id="hhc-sp-NRK"/>
+                        <outlet property="welcomeLabel" destination="jV0-3u-tnh" id="lrf-mB-Iaf"/>
+                        <segue destination="bw4-nb-i5t" kind="presentation" identifier="signInSegue" id="TPT-FP-POf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1N-KT-0bu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3961" y="-1192"/>
+        </scene>
+        <!--SearchSpotify-->
+        <scene sceneID="3yL-aU-kRJ">
+            <objects>
+                <viewController id="Bwo-FS-jQn" customClass="SearchCollectionViewController" customModule="SearchSpotify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lCl-tT-sXQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="a0R-eB-Sh4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W1l-zd-aqR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="aQo-cL-PQc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="instructionLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNV-D2-3UU">
+                                <rect key="frame" x="123.5" y="323" width="128.5" height="21"/>
+                                <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eAe-8l-XrB">
+                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a4d-ua-K7T">
+                                    <size key="itemSize" width="103" height="109"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="searchCell" id="raQ-sV-xhE" customClass="SearchResultCollectionViewCell" customModule="SearchSpotify" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="103" height="109"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="103" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rgI-an-GRS">
+                                                    <rect key="frame" x="16.5" y="2" width="71" height="71"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple-music" translatesAutoresizingMaskIntoConstraints="NO" id="ocO-uQ-P12">
+                                                            <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="ocO-uQ-P12" secondAttribute="height" multiplier="1:1" id="gDx-Nn-JlC"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOh-rn-Uyh" customClass="MarqueeLabel" customModule="SearchSpotify" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="78" width="103" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="LJb-Cz-LGA"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HKGrotesk-Medium" family="HK Grotesk" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="trailingBuffer">
+                                                            <real key="value" value="50"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                                            <real key="value" value="50"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
+                                                            <real key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artists" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adW-cJ-2xc" customClass="MarqueeLabel" customModule="SearchSpotify" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="95" width="103" height="14"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="14" id="Dr9-0k-Ms9"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                                            <real key="value" value="50"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="trailingBuffer">
+                                                            <real key="value" value="50"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
+                                                            <real key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="pOh-rn-Uyh" secondAttribute="trailing" id="37G-g9-E9K"/>
+                                            <constraint firstItem="adW-cJ-2xc" firstAttribute="leading" secondItem="raQ-sV-xhE" secondAttribute="leading" id="Aqd-2Q-sx4"/>
+                                            <constraint firstItem="adW-cJ-2xc" firstAttribute="top" secondItem="pOh-rn-Uyh" secondAttribute="bottom" id="dqe-BU-SI4"/>
+                                            <constraint firstItem="pOh-rn-Uyh" firstAttribute="top" secondItem="rgI-an-GRS" secondAttribute="bottom" constant="5" id="eqE-wM-DWP"/>
+                                            <constraint firstAttribute="bottom" secondItem="adW-cJ-2xc" secondAttribute="bottom" id="gUB-Hb-tr9"/>
+                                            <constraint firstItem="pOh-rn-Uyh" firstAttribute="leading" secondItem="raQ-sV-xhE" secondAttribute="leading" id="gsp-iC-X5O"/>
+                                            <constraint firstAttribute="trailing" secondItem="adW-cJ-2xc" secondAttribute="trailing" id="mLE-xs-2JG"/>
+                                            <constraint firstItem="rgI-an-GRS" firstAttribute="centerX" secondItem="pOh-rn-Uyh" secondAttribute="centerX" id="vCM-C9-h3h"/>
+                                            <constraint firstItem="rgI-an-GRS" firstAttribute="top" secondItem="raQ-sV-xhE" secondAttribute="top" constant="2" id="wWV-DI-UIw"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="albumImageView" destination="ocO-uQ-P12" id="q4b-an-4p1"/>
+                                            <outlet property="artistsLabel" destination="adW-cJ-2xc" id="EPz-RQ-uEn"/>
+                                            <outlet property="nameLabel" destination="pOh-rn-Uyh" id="fpy-Ed-0bV"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8l9-Lm-9SD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1Nc-Lb-mLs"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBP-ao-Y8w">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Load more results">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadMoreResultsButtonTapped:" destination="Bwo-FS-jQn" eventType="touchUpInside" id="J0R-wD-BAU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="a0R-eB-Sh4" firstAttribute="top" secondItem="eAe-8l-XrB" secondAttribute="bottom" id="4Ix-mn-sFz"/>
+                            <constraint firstItem="8l9-Lm-9SD" firstAttribute="leading" secondItem="W1l-zd-aqR" secondAttribute="leading" id="8Zq-Ct-oSZ"/>
+                            <constraint firstItem="pBP-ao-Y8w" firstAttribute="leading" secondItem="W1l-zd-aqR" secondAttribute="leading" id="D0h-vq-2St"/>
+                            <constraint firstItem="fNV-D2-3UU" firstAttribute="centerX" secondItem="W1l-zd-aqR" secondAttribute="centerX" id="Igc-LR-uu1"/>
+                            <constraint firstItem="a0R-eB-Sh4" firstAttribute="top" secondItem="pBP-ao-Y8w" secondAttribute="bottom" id="KoY-cN-AGd"/>
+                            <constraint firstAttribute="trailing" secondItem="pBP-ao-Y8w" secondAttribute="trailing" id="Msp-lf-eP5"/>
+                            <constraint firstItem="eAe-8l-XrB" firstAttribute="leading" secondItem="W1l-zd-aqR" secondAttribute="leading" id="Q34-Vw-w2W"/>
+                            <constraint firstAttribute="trailing" secondItem="aQo-cL-PQc" secondAttribute="trailing" id="SSZ-Me-wEE"/>
+                            <constraint firstAttribute="trailing" secondItem="eAe-8l-XrB" secondAttribute="trailing" id="TJ0-Qd-b7p"/>
+                            <constraint firstAttribute="trailing" secondItem="8l9-Lm-9SD" secondAttribute="trailing" id="kkg-i2-jLD"/>
+                            <constraint firstItem="fNV-D2-3UU" firstAttribute="centerY" secondItem="W1l-zd-aqR" secondAttribute="centerY" id="lSf-rY-jKc"/>
+                            <constraint firstItem="aQo-cL-PQc" firstAttribute="leading" secondItem="W1l-zd-aqR" secondAttribute="leading" id="ltV-W2-flP"/>
+                            <constraint firstItem="8l9-Lm-9SD" firstAttribute="top" secondItem="lCl-tT-sXQ" secondAttribute="bottom" id="vXs-yh-GCV"/>
+                            <constraint firstItem="a0R-eB-Sh4" firstAttribute="top" secondItem="aQo-cL-PQc" secondAttribute="bottom" id="wD8-eN-lFz"/>
+                            <constraint firstItem="eAe-8l-XrB" firstAttribute="top" secondItem="8l9-Lm-9SD" secondAttribute="bottom" id="yeM-Ii-BaK"/>
+                            <constraint firstItem="aQo-cL-PQc" firstAttribute="top" secondItem="W1l-zd-aqR" secondAttribute="top" id="zT2-wQ-ReN"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Wqs-ce-AD0" appends="YES" id="pFL-ng-SCh"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="SearchSpotify" id="lbq-ZE-iEW">
+                        <barButtonItem key="backBarButtonItem" title="Logout" id="UBc-Yv-mKQ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="eAe-8l-XrB" id="COL-N6-r5v"/>
+                        <outlet property="instructionLabel" destination="fNV-D2-3UU" id="RE3-YX-GOo"/>
+                        <outlet property="loadMoreResults" destination="pBP-ao-Y8w" id="Clx-X8-fwW"/>
+                        <outlet property="searchBarContainerView" destination="8l9-Lm-9SD" id="WKg-yg-N0V"/>
+                        <outlet property="searchDisplayController" destination="1fW-A4-ueb" id="YMc-LB-tow"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bxz-Hl-6sA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer cancelsTouchesInView="NO" id="Wqs-ce-AD0">
+                    <connections>
+                        <action selector="onTapView:" destination="Bwo-FS-jQn" id="dXE-MC-wZp"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <searchDisplayController id="1fW-A4-ueb">
+                    <connections>
+                        <outlet property="delegate" destination="Bwo-FS-jQn" id="YpQ-bN-xnm"/>
+                        <outlet property="searchContentsController" destination="Bwo-FS-jQn" id="HSn-Eo-Ntr"/>
+                        <outlet property="searchResultsDataSource" destination="Bwo-FS-jQn" id="spq-nl-tzY"/>
+                        <outlet property="searchResultsDelegate" destination="Bwo-FS-jQn" id="fBl-aY-mtp"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-1738.4000000000001" y="-1192.3538230884558"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xF7-Ja-uNQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bw4-nb-i5t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hf2-Nn-Fkb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bwo-FS-jQn" kind="relationship" relationship="rootViewController" id="aD2-of-LXW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nU9-hL-fLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2521" y="-1192"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple-music" width="20" height="20"/>
+        <image name="gradient" width="1920" height="1080"/>
+    </resources>
+</document>
